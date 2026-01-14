@@ -2,8 +2,8 @@ import { Award } from "lucide-react"
 
 export function QualitySection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground">
-      <div className="container mx-auto px-4">
+    <section className="relative bg-gradient-to-br from-primary to-primary/80 text-primary-foreground curved-edge-bottom">
+      <div className="container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-8">
             <Award className="w-20 h-20" />

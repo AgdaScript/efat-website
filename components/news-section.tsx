@@ -27,7 +27,7 @@ const newsItems = [
 
 export function NewsSection() {
   return (
-    <section id="noticias" className="py-20 bg-secondary">
+    <section id="noticias" className="relative pb-20 bg-secondary curved-edge-top">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <span className="text-sm font-bold text-primary uppercase tracking-wider">KEEP UP TO DATE</span>

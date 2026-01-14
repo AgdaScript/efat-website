@@ -49,7 +49,7 @@ const dnaItems = [
 
 export function DNASection() {
   return (
-    <section id="dna" className="py-20 bg-background">
+    <section id="dna" className="relative pb-20 bg-background curved-edge-top">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <span className="text-sm font-bold text-primary uppercase tracking-wider">DRAGON DNA</span>
