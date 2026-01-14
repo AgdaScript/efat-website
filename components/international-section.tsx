@@ -6,7 +6,7 @@ export function InternationalSection() {
   return (
     <section
       id="internacional"
-      className="relative pt-12 bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground curved-edge-bottom"
+      className="relative pt-12 bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground curved-edge-bottom curved-edge-top"
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">

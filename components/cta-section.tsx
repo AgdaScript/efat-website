@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button"
 
 export function CTASection() {
   return (
-    <section className="relative pt-12 bg-gradient-to-r from-primary via-primary/90 to-accent text-primary-foreground curved-edge-bottom">
-      <div className="container mx-auto px-4 text-center">
+    <section className="relative bg-gradient-to-r from-primary via-primary/90 to-accent text-primary-foreground curved-edge-top curved-edge-bottom">
+      <div className="container mx-auto px-4 py-20 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           READY TO BECOME A <span className="text-accent">CHAMPION</span>?
         </h2>

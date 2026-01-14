@@ -2,7 +2,7 @@ import { Award } from "lucide-react"
 
 export function QualitySection() {
   return (
-    <section className="relative bg-gradient-to-br from-primary to-primary/80 text-primary-foreground curved-edge-bottom">
+    <section className="relative bg-gradient-to-br from-primary to-primary/80 text-primary-foreground curved-edge-bottom curved-edge-top">
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-8">

@@ -125,7 +125,7 @@
 }
 
 @layer utilities {
-  .curved-edge-bottom {
+  .curved-edge-bottom:not(.curved-edge-top) {
     padding-bottom: 70px !important;
     mask-image: radial-gradient(60% 70px at bottom, transparent 100%, black);
     -webkit-mask-image: radial-gradient(60% 70px at bottom, transparent 100%, black);
@@ -137,7 +137,7 @@
     -webkit-mask-position: bottom;
   }
 
-  .curved-edge-top {
+  .curved-edge-top:not(.curved-edge-bottom) {
     padding-top: 70px !important;
     mask-image: radial-gradient(60% 70px at top, transparent 100%, black);
     -webkit-mask-image: radial-gradient(60% 70px at top, transparent 100%, black);
@@ -147,5 +147,24 @@
     -webkit-mask-repeat: no-repeat;
     mask-position: top;
     -webkit-mask-position: top;
+  }
+
+  .curved-edge-top.curved-edge-bottom {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+    mask-image: 
+      radial-gradient(ellipse 60% 70px at 50% 0%, transparent 100%, black),
+      radial-gradient(ellipse 60% 70px at 50% 100%, transparent 100%, black);
+    -webkit-mask-image: 
+      radial-gradient(ellipse 60% 70px at 50% 0%, transparent 100%, black),
+      radial-gradient(ellipse 60% 70px at 50% 100%, transparent 100%, black);
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-composite: intersect;
+    -webkit-mask-composite: source-in;
   }
 }
