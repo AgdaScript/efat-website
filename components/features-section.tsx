@@ -1,31 +1,32 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Calendar, School, Globe } from "lucide-react"
+import { Trophy, Users, Handshake } from "lucide-react"
+import Link from "next/link"
 
 const features = [
   {
-    icon: Calendar,
-    title: "EVENTS",
+    icon: Trophy,
+    title: "FORMACAO DESPORTIVA",
     description:
-      "Enter a universe where Joy trains with you, Passion wears blue and white, and Motivation drives you to play like a true Dragon.",
-    cta: "SEE CATALOG 25/26",
-    href: "#eventos",
+      "Treinos regulares nos escaloes Sub-11, Sub-13, Sub-15, Sub-17 e Senior Feminino. Metodologia focada no desenvolvimento tecnico e humano dos atletas.",
+    cta: "VER ESCALOES",
+    href: "/sobre-nos",
   },
   {
-    icon: School,
-    title: "FOOTBALL SCHOOLS",
+    icon: Users,
+    title: "INCLUSAO SOCIAL",
     description:
-      "Wear the Dragon's skin and live your passion at one of the more than 35 Dragon Force Soccer Schools throughout the country.",
-    cta: "SEE SCHOOLS",
-    href: "#escolas",
+      "Combatemos a delinquencia juvenil e o abandono escolar atraves do desporto, formando jovens conscientes e comprometidos com a comunidade.",
+    cta: "SABER MAIS",
+    href: "/sobre-nos",
   },
   {
-    icon: Globe,
-    title: "INTERNATIONAL",
+    icon: Handshake,
+    title: "PARCERIAS",
     description:
-      "A methodology open to the world that travels to make itself known and welcomes all those who want to feel the true Power of the Dragon.",
-    cta: "LEARN MORE",
-    href: "#internacional",
+      "Protocolos com o FC Porto Dragon Force, IDS Portugal, Academia Amizade de Sao Paulo e outras instituicoes internacionais.",
+    cta: "VER PARCERIAS",
+    href: "/parcerias",
   },
 ]
 
@@ -41,7 +42,7 @@ export function FeaturesSection() {
                 <h3 className="text-2xl font-bold mb-4 text-card-foreground">{feature.title}</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{feature.description}</p>
                 <Button variant="outline" className="w-full bg-transparent" asChild>
-                  <a href={feature.href}>{feature.cta}</a>
+                  <Link href={feature.href}>{feature.cta}</Link>
                 </Button>
               </CardContent>
             </Card>

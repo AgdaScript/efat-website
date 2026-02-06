@@ -4,56 +4,58 @@ import { Heart, User, Users, Trophy, GraduationCap, Target, Lightbulb, Activity,
 const dnaItems = [
   {
     icon: Heart,
-    title: "SOCCER IS A PASSION",
-    description: "That's why we value a serious, organized and passionate process",
+    title: "PAIXAO PELO FUTEBOL",
+    description: "Acreditamos no desporto como motor de transformacao e inclusao social na comunidade",
   },
   {
     icon: User,
-    title: "THE CHILD AT THE CENTER",
-    description: "Our greatest ambition is to develop our students' sporting, social and emotional skills",
+    title: "O JOVEM NO CENTRO",
+    description: "Cada atleta e unico e merece atencao especial para desenvolver o seu maximo potencial",
   },
   {
     icon: Users,
-    title: "EACH STUDENT IS UNIQUE",
-    description: "And it deserves special attention, so that we can always get the best out of it",
+    title: "ESPIRITO DE EQUIPA",
+    description: "Valorizamos o coletivo, a solidariedade e a uniao como pilares da formacao humana",
   },
-  { icon: Trophy, title: "PREPARING CHAMPIONS FOR LIFE", description: "We assume that champions don't form overnight" },
+  {
+    icon: Trophy,
+    title: "FORMAR CAMPEOES PARA A VIDA",
+    description: "Preparamos atletas e cidadaos comprometidos com o futuro de Cabo Verde",
+  },
   {
     icon: GraduationCap,
-    title: "ONGOING TRAINING",
-    description: "All our staff have access to the right tools to enhance the development of all students",
+    title: "EDUCACAO E DESPORTO",
+    description: "Incentivamos a permanencia escolar e o equilibrio entre estudos e pratica desportiva",
   },
   {
     icon: Target,
-    title: "INTEGRATED TEACHING AREAS",
-    description: "To promote values that will make our students aware of everything around them",
+    title: "COMBATE AO ABANDONO ESCOLAR",
+    description: "Trabalhamos ativamente para manter os jovens na escola e longe de caminhos prejudiciais",
   },
   {
     icon: Lightbulb,
-    title: "CONSTANT INNOVATION",
-    description:
-      "We study the challenges of the present and seek to optimize our Methodology for an ever stronger future",
+    title: "INOVACAO SOCIAL",
+    description: "Buscamos sempre novas formas de impactar positivamente a vida dos jovens da comunidade",
   },
   {
     icon: Activity,
-    title: "COMMON THINKING",
-    description:
-      "We believe that success comes from the perfect connection between Training, Nutrition, Psychology and Operation",
+    title: "DESENVOLVIMENTO INTEGRAL",
+    description: "Treino, educacao, saude e valores caminham juntos no processo formativo dos nossos atletas",
   },
   {
     icon: Smile,
-    title: "RESPONSIBILITY AND JOY",
-    description: "It is with this attitude that we welcome and accompany all our students",
+    title: "ALEGRIA E RESPONSABILIDADE",
+    description: "E com esta atitude que acolhemos e acompanhamos todos os nossos jovens atletas",
   },
 ]
 
 export function DNASection() {
   return (
-    <section id="dna" className="relative pb-20 bg-background curved-edge-top">
+    <section id="dna" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <span className="text-sm font-bold text-primary uppercase tracking-wider">DRAGON DNA</span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">OUR IDENTITY</h2>
+          <span className="text-sm font-bold text-primary uppercase tracking-wider">DNA EFAT</span>
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">A NOSSA IDENTIDADE</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

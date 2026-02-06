@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter, Bebas_Neue } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
@@ -12,9 +12,9 @@ const bebasNeue = Bebas_Neue({
 })
 
 export const metadata: Metadata = {
-  title: "Dragon Force Elite Academy - Preparing Champions for Life",
+  title: "EFAT - Escola de Futebol Achada Grande Tras",
   description:
-    "Elite Sport Academy with over 35 Dragon Force Soccer Schools throughout the country. Experience the Power of the Dragon.",
+    "Associacao Escola de Futebol de Achada Grande Tras. Inclusao social atraves do desporto em Cabo Verde. Formacao de jovens atletas e cidadaos.",
   generator: "v0.app",
   icons: {
     icon: [
@@ -35,14 +35,19 @@ export const metadata: Metadata = {
   },
 }
 
+export const viewport: Viewport = {
+  themeColor: "#2d7a3a",
+  userScalable: true,
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${bebasNeue.variable}`}>
-      <body className={`font-sans antialiased`}>
+    <html lang="pt" className={`${inter.variable} ${bebasNeue.variable}`}>
+      <body className="font-sans antialiased">
         {children}
         <Analytics />
       </body>

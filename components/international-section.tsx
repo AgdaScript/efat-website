@@ -1,19 +1,20 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Globe, Plane, Users } from "lucide-react"
+import { Globe, GraduationCap, Handshake } from "lucide-react"
+import Link from "next/link"
 
 export function InternationalSection() {
   return (
     <section
-      id="internacional"
-      className="relative pt-12 bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground curved-edge-bottom curved-edge-top"
+      id="parcerias"
+      className="py-20 bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground"
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">INTERNATIONAL</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">PARCERIAS INTERNACIONAIS</h2>
           <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
-            From Porto to the world and from the world to Porto. Experience our methodology and feel the true Power of
-            the Dragon wherever you are.
+            A EFAT estabelece protocolos com instituicoes nacionais e internacionais,
+            abrindo portas para oportunidades educativas e desportivas para os jovens cabo-verdianos.
           </p>
         </div>
 
@@ -21,38 +22,40 @@ export function InternationalSection() {
           <Card className="bg-card/95 backdrop-blur">
             <CardContent className="p-8 text-center">
               <Globe className="w-16 h-16 text-primary mx-auto mb-6" />
-              <h3 className="text-2xl font-bold mb-4 text-card-foreground">Global Presence</h3>
+              <h3 className="text-2xl font-bold mb-4 text-card-foreground">FC Porto Dragon Force</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Dragon Force methodology is present in multiple countries, spreading our passion and excellence
-                worldwide.
+                Parceria historica com o FC Porto para abertura da escola Dragon Force em Cabo Verde,
+                trazendo metodologia de elite para os jovens atletas.
               </p>
             </CardContent>
           </Card>
 
           <Card className="bg-card/95 backdrop-blur">
             <CardContent className="p-8 text-center">
-              <Plane className="w-16 h-16 text-primary mx-auto mb-6" />
-              <h3 className="text-2xl font-bold mb-4 text-card-foreground">Custom Programs</h3>
+              <GraduationCap className="w-16 h-16 text-primary mx-auto mb-6" />
+              <h3 className="text-2xl font-bold mb-4 text-card-foreground">IDS Portugal</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Tailor-made training programs designed specifically for your team or organization's needs.
+                Protocolo com o Instituto de Desenvolvimento Social em Lisboa, possibilitando que jovens
+                da EFAT estudem em Portugal com bolsas de estudo.
               </p>
             </CardContent>
           </Card>
 
           <Card className="bg-card/95 backdrop-blur">
             <CardContent className="p-8 text-center">
-              <Users className="w-16 h-16 text-primary mx-auto mb-6" />
-              <h3 className="text-2xl font-bold mb-4 text-card-foreground">Exchange Programs</h3>
+              <Handshake className="w-16 h-16 text-primary mx-auto mb-6" />
+              <h3 className="text-2xl font-bold mb-4 text-card-foreground">Academia Amizade</h3>
               <p className="text-muted-foreground leading-relaxed">
-                International exchange opportunities for students to experience different cultures and football styles.
+                Protocolo com a Academia Amizade de Sao Paulo, Guine-Bissau, para intercambio de
+                experiencias e desenvolvimento conjunto.
               </p>
             </CardContent>
           </Card>
         </div>
 
         <div className="text-center">
-          <Button size="lg" variant="secondary" className="text-lg px-8">
-            REQUEST CUSTOM PROGRAM
+          <Button size="lg" variant="secondary" className="text-lg px-8" asChild>
+            <Link href="/parcerias">VER TODAS AS PARCERIAS</Link>
           </Button>
         </div>
       </div>
