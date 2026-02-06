@@ -41,14 +41,14 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-primary backdrop-blur-sm border-b border-primary/80 text-primary-foreground">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          <Link href="/" className="flex items-center gap-3">
+        <div className="flex items-center justify-between h-12 md:h-14">
+          <Link href="/" className="flex items-center gap-2">
             <Image
               src="/images/EFAT_LOGO.png"
               alt="Associação Escola EFAT"
               width={180}
               height={48}
-              className="h-10 w-auto md:h-12 object-contain"
+              className="h-8 w-auto md:h-10 object-contain"
               priority
             />
           </Link>
