@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 const sobreNosSubItems = [
   { label: "A Nossa Historia", href: "/sobre-nos" },
@@ -42,15 +43,14 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg md:text-xl">E</span>
-            </div>
-            <div>
-              <div className="text-xl md:text-2xl font-bold text-primary tracking-tight">EFAT</div>
-              <div className="text-[10px] md:text-xs text-muted-foreground leading-none hidden sm:block">
-                Escola de Futebol Achada Grande Tras
-              </div>
-            </div>
+            <Image
+              src="/images/EFAT_LOGO.png"
+              alt="Associação Escola EFAT"
+              width={180}
+              height={48}
+              className="h-10 w-auto md:h-12 object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
