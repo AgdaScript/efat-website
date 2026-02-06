@@ -42,7 +42,7 @@ export function HeroSection() {
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-        <ChevronDown className="w-8 h-8 text-primary-foreground" />
+        <ChevronDown className="w-8 h-8 text-accent" />
       </div>
     </section>
   )
