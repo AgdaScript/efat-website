@@ -30,7 +30,7 @@ export function NewsSection() {
   return (
     <section id="noticias" className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center ">
           <span className="text-sm font-bold text-primary uppercase tracking-wider">FIQUE ATUALIZADO</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">NOTICIAS</h2>
         </div>
